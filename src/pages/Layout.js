@@ -1,11 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
+import Media from "./Media"
 
 function Layout() {
     return (
-        <>
+        <div className="space-y-10">
             <nav>
                 <ul className="
-                flex flex-row space-x-5
+                space-y-5
                 ">
                     <li>
                         <Link to="/">HOME</Link>
@@ -26,7 +27,8 @@ function Layout() {
             <footer>
                 This is the footer
             </footer>
-        </>
+            <Media></Media>
+        </div>
     )
 }
 
