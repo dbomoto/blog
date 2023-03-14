@@ -4,9 +4,11 @@ import Media from "./Media"
 function Layout() {
     return (
         <div className="space-y-10">
-            <nav>
+            <nav className="bg-red-200 z-10">
+                <input type="checkbox" id="menu" className="hidden peer"/>
+                <label for="menu" className="">DBO WEBDEVe</label>
                 <ul className="
-                space-y-5
+                absolute bg-red-300 h-[120px] -translate-y-[120px] peer-checked:translate-y-0 transition all
                 ">
                     <li>
                         <Link to="/">HOME</Link>
